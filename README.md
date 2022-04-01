@@ -10,7 +10,7 @@
 
 ** Build Status **
 
-<h3> Just built the basic structure of the app. Later eventually I'll more functionality</h3>
+<h3> Just built the basic structure of the app. Later eventually I'll add more functionality</h3>
 
 ** Code Style **
 
