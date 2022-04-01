@@ -16,3 +16,7 @@
 
 Code style used here [Python Style Guide](https://www.python.org/dev/peps/pep-0008/)
 [Djanog Style Guide](https://docs.djangoproject.com/en/2.0/styleguide/)
+
+** What is Used? **
+
+In this app, I used built in database and email backend. 
