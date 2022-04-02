@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load tailwind_filters %}
+
+{% block content %}
+<body style="width:100%;height:100%; background-color:#aaa8ce ;">
+    
+    <div style="margin-top:20px; padding-bottom:10px; background-color:#aaa8ce;color:#fff; text-align: center; text-transform: uppercase">
+        <h1>You are successfully logged out</h1>
+        <hr>
+        <a href="{% url 'login'%}">Login here </a> 
+</body>
+{% endblock content %}

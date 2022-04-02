@@ -3,6 +3,9 @@ from .models import emails
 
 
 
+
+
+
 class MailCreateForm(forms.ModelForm):
     class Meta:
         model = emails
@@ -27,4 +30,6 @@ class MailCreateForm(forms.ModelForm):
             'message': forms.Textarea(attrs={'placeholder': 'Type your Email here ...'}), 
             'subject': forms.TextInput(attrs={'placeholder': 'Type your Subject here ...'}),
         }
+
+
 
