@@ -24,5 +24,7 @@ class MailCreateForm(forms.ModelForm):
             'receiver_three': forms.EmailInput(attrs={'placeholder': 'Email Address Three'}),
             'receiver_four': forms.EmailInput(attrs={'placeholder': 'Email Address Four'}),
             'receiver_five': forms.EmailInput(attrs={'placeholder': 'Email Address Five'}),
+            'message': forms.Textarea(attrs={'placeholder': 'Type your Email here ...'}), 
+            'subject': forms.TextInput(attrs={'placeholder': 'Type your Subject here ...'}),
         }
 
