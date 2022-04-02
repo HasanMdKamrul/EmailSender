@@ -4,6 +4,7 @@ from django.urls import path,include
 <<<<<<< HEAD
 from django.conf import settings
 from django.contrib.auth.views import LoginView
+from mail.views import LandingPageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -19,6 +20,5 @@ urlpatterns = [
     path('login/',LoginView.as_view(),name='login'),
     path('logout/',LogoutView.as_view(),name='logout'),
     path('signup/',SignUpView.as_view(),name='signup'),
-    
->>>>>>> 3eb0d2600683eb2d5d3bc54a231546c513d6b30a
+    path('',LandingPageView.as_view(),name='landing_page'),
 ]

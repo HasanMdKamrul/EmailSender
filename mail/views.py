@@ -9,6 +9,9 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 
+class LandingPageView(generic.TemplateView):
+    template_name = 'landing_page.html'
+
 #Comments
 
 
