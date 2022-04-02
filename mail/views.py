@@ -7,6 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 
 
+
 class SignUpView(generic.CreateView):
     template_name ="mail/signup.html"
     form_class = UserCreationForm
