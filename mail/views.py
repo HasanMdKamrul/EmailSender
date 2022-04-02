@@ -8,6 +8,10 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 
+
+#Comments
+
+
 class SignUpView(generic.CreateView):
     template_name ="mail/signup.html"
     form_class = UserCreationForm
