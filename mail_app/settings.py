@@ -40,9 +40,14 @@ INSTALLED_APPS = [
     
     # * Installed apps
     'mail',
+<<<<<<< HEAD
     "tailwind",
     
     
+=======
+    "crispy_forms",
+    "crispy_tailwind",
+>>>>>>> 3eb0d2600683eb2d5d3bc54a231546c513d6b30a
 ]
 
 MIDDLEWARE = [
@@ -127,5 +132,12 @@ STATIC_URL = '/static/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+<<<<<<< HEAD
 
 
+=======
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_TEMPLATE_PACK = "tailwind"
+
+LOGIN_REDIRECT_URL = 'mails:mail_create'
+>>>>>>> 3eb0d2600683eb2d5d3bc54a231546c513d6b30a

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--
   This example requires Tailwind CSS v2.0+ 
   
@@ -70,3 +71,24 @@
       </form>
     </div>
   </div>
+=======
+{% extends "base.html" %}
+
+{% load tailwind_filters %}
+
+{% block content %}
+<body style="width:100%;height:100%; background-color:#aaa8ce;">
+    
+    <div style="margin-top:20px; padding-bottom:10px; background-color:#aaa8ce;color:#fff; text-align: center; text-transform: uppercase">
+        <h1>Log In</h1>
+    </div>
+    <div style="background-color:#aaa8ce; width:100%; height:100%; display: flex; justify-content: center; text-transform: uppercase;">
+        <form id="form" method="post">
+            {% csrf_token %}
+            {{form|crispy}}
+            <button  class="flex mt-3 text-white bg-pink-500 border-0 py-2 px-6 focus:out:bg-piline-none hovernk-600 rounded mb-5 w-full " type="submit">Submit</button>
+        </form> 
+    </div>
+</body>
+{% endblock content %}
+>>>>>>> 3eb0d2600683eb2d5d3bc54a231546c513d6b30a
