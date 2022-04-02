@@ -17,4 +17,12 @@ class MailCreateForm(forms.ModelForm):
             'receiver_four',
             'receiver_five',
         )
+        
+        widgets = {
+            'receiver_one': forms.EmailInput(attrs={'placeholder': 'Email Address One(*Required_field)'}),
+            'receiver_two': forms.EmailInput(attrs={'placeholder': 'Email Address Two'}),
+            'receiver_three': forms.EmailInput(attrs={'placeholder': 'Email Address Three'}),
+            'receiver_four': forms.EmailInput(attrs={'placeholder': 'Email Address Four'}),
+            'receiver_five': forms.EmailInput(attrs={'placeholder': 'Email Address Five'}),
+        }
 
