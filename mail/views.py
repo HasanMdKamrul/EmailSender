@@ -8,11 +8,11 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 
+# todo Landing page 
 
 class LandingPageView(generic.TemplateView):
-    template_name = 'landing_page.html'
-
-#Comments
+    
+    template_name ='landingpage.html'
 
 
 class SignUpView(generic.CreateView):
